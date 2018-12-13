@@ -57,15 +57,15 @@
 
     <repositories>
         <repository>
-            <id>myMavenRepo.read</id>
-            <url>https://mymavenrepo.com/repo/FN8PIshHk5uALNhkXbhs/</url>
+            <id>myMavenRepo.releases</id>
+            <url>>http://localhost:8081/repository/maven-releases/</url>
         </repository>
     </repositories>
 
     <distributionManagement>
         <repository>
-            <id>myMavenRepo.write</id>
-            <url>http://localhost:8081/repository/maven-releases/</url>
+            <id>myMavenRepo.snapshots</id>
+            <url>http://localhost:8081/repository/maven-snapshots/</url>
         </repository>
     </distributionManagement>
 
