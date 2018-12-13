@@ -58,14 +58,14 @@
     <repositories>
         <repository>
             <id>myMavenRepo.releases</id>
-            <url>>http://localhost:8081/repository/maven-releases/</url>
+            <url>>http://localhost:8081/repository/maven-public/</url>
         </repository>
     </repositories>
 
     <distributionManagement>
         <repository>
             <id>myMavenRepo.snapshots</id>
-            <url>http://localhost:8081/repository/maven-snapshots/</url>
+            <url></url>
         </repository>
     </distributionManagement>
 
