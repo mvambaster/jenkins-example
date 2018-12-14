@@ -34,25 +34,18 @@
                         <groupId>org.junit.platform</groupId>
                         <artifactId>junit-platform-surefire-provider</artifactId>
                         <version>1.0.0-M3</version>
+                             <configuration> 
+                                  <argLine>-Xmx512m</argLine> 
+                                  <forkMode>pertest</forkMode> 
+                                  <childDelegation>true</childDelegation> 
+                                  <testFailureIgnore>true</testFailureIgnore> 
+                              </configuration>
                     </dependency>
                 </dependencies>
             </plugin>
         </plugins>
     </build>
-<build>
-    <plugins>
-        <plugin> 
-            <groupId>org.apache.maven.plugins</groupId> 
-            <artifactId>maven-surefire-plugin</artifactId> 
-            <configuration> 
-                <argLine>-Xmx512m</argLine> 
-                <forkMode>pertest</forkMode> 
-                <childDelegation>true</childDelegation> 
-                <testFailureIgnore>true</testFailureIgnore> 
-            </configuration>
-        </plugin>
-    </plugins>
-</build>
+
     <dependencies>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
