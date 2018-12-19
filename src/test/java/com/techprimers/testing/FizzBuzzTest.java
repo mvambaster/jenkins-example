@@ -37,7 +37,7 @@ class FizzBuzzTest {
     public void testZero() {
 
         Assertions.assertThrows(IllegalArgumentException.class,
-                () -> fB.play(0));
+                () -> {fB.play(0)});
     }
 
     @AfterEach
